@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppings', sans-serif;
+  }
+  
+  .container{
+    height: 100%;
+    width:180px;
+    top:0px;
+    position: absolute;
+    background: #161616;
+    z-index:1;
+    transition: 0.5s ease;
+    transform: translatex(0);
+  }
+  .container .head{
+    color: #fbfdce;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    background: linear-gradient(30deg,#3e8e41,#3e8e41)
+  }
+  ol{
+    width: 100%;
+    list-style: none;
+  }
+  ol li{
+    display: block;
+    width: 100%;
+  }
+  ol li a{
+    color: #fbfdce;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+  }
+  ol li a i{
+    width: 50px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 10px;
+  }
+  ol li:hover a{
+    background: #030303;
+    color: #00eaff;
+    letter-spacing: 2px;
+  }
+  
+  
+  nav{
+    position: relative;
+    width: 1300px;
+    height: 50px;
+    left:180px;
+    background: #222;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+  nav a{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: lem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 23px;
+    z-index: 1;
+  }
+  nav span{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 120px;
+    height: 100%;
+    background: linear-gradient(45deg,#3e8e41,#3e8e41);
+    border-radius: 8px;
+  }
+  nav a:nth-child(1):hover~span{
+    left:0;
+  }
+  nav a:nth-child(2):hover~span{
+    left:105px;
+  }
+  nav a:nth-child(3):hover~span{
+    left: 195px;
+    width: 110px;
+  }
+  nav a:nth-child(4):hover~span{
+    left:320px;
+    width: 115px;
+  }
+  nav a:nth-child(5):hover~span{
+    left:480px;
+    width:110px;
+  }
+  
+  
+  .content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+  }
+  .content  h1{
+    font-size: 70px;
+    margin-top: 80px;
+  }
+  .content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+  }
+  /**button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;**/
+  
+  .content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+  }
+  .content .read-more:hover{
+    background-color: #3e8e41;
+  }
+  @media screen and (max-width: 768px){
+    .content .read-more{
+      font-size: 16px;
+  
+    }
+  }
